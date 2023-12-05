@@ -1,6 +1,9 @@
 DROP DATABASE IF EXISTS clothshop;
 CREATE DATABASE clothshop;
 USE clothshop;
+DROP DATABASE IF EXISTS clothshop;
+CREATE DATABASE clothshop;
+USE clothshop;
 DROP TABLE IF EXISTS `order_items`;
 
 
@@ -25,6 +28,7 @@ CREATE TABLE `orders` (
 ) ENGINE=InnoDB AUTO_INCREMENT=9 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
 
 
+DROP TABLE IF EXISTS `order_items`;
 CREATE TABLE `order_items` (
   `id` int(11) NOT NULL AUTO_INCREMENT,
   `product_id` int(11) NOT NULL,
