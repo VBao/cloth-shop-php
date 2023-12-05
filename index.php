@@ -203,29 +203,23 @@ $allOrders = getAllOrdersWithItems();
         <div class="icons">
             <a href="#" class="fas fa-heart"></a>
             <a href="#" class="fas fa-shopping-cart"></a>
-            <a href="/admin.php" class="fas fa-user"></a>
+            <a href="admin.php" class="fas"><img src="https://cdn-icons-png.flaticon.com/512/3607/3607444.png" width="25px" alt=""></a>
         </div>
     </header>
 
     <section class="home" id="home">
         <div class="content">
             <div class="content">
-                <!-- <div class="slider">
+                <div class="slider">
                     <div class="list">
                         <div class="item">
-                            <img src="assets/1.png" alt="">
+                            <img src="assets/1.webp" alt="">
                         </div>
                         <div class="item">
-                            <img src="assets/2.png" alt="">
+                            <img src="assets/2.webp" alt="">
                         </div>
                         <div class="item">
-                            <img src="assets/3.png" alt="">
-                        </div>
-                        <div class="item">
-                            <img src="assets/4.png" alt="">
-                        </div>
-                        <div class="item">
-                            <img src="assets/5.png" alt="">
+                            <img src="assets/3.webp" alt="">
                         </div>
                     </div>
                     <div class="buttons">
@@ -240,7 +234,7 @@ $allOrders = getAllOrdersWithItems();
                         <li></li>
                         <li></li>
                     </ul>
-                </div> -->
+                </div>
                 <script src="app.js"></script>
                 <h3>CLOTH Shop</h3>
                 <span>Hệ thống cửa hàng quần áo</span>
@@ -252,7 +246,7 @@ $allOrders = getAllOrdersWithItems();
     </section>
 
     <section class="products" id="products">
-        <h1 class="heading"> lasted <span>products</span> </h1>
+        <h1 class="heading"> Popular <span>products</span> </h1>
         <div class="box-container">
             <?php foreach ($products as $product) : ?>
                 <div class="box">
@@ -270,7 +264,7 @@ $allOrders = getAllOrdersWithItems();
                             <?= $product['name'] ?>
                         </h3>
                         <div class="price">
-                            <?= $product['price'] ?>
+                            <?= $product['price'] ?> VND
                         </div>
                     </div>
                 </div>
@@ -343,7 +337,7 @@ $allOrders = getAllOrdersWithItems();
         </section>
 
     <?php endif; ?>
-    <section class="order-list">
+    <section class="order-list" style="font-size: 20px">
         <table border="1">
             <tr>
                 <th>Order ID</th>

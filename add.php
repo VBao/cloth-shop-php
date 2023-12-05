@@ -30,7 +30,7 @@ if ($sId === 'admin@gmail.com') { ?>
 
   <div class="card ">
     <div class="card-header">
-      <h3 class='text-center'>Add New User</h3>
+      <h3 class='text-center'>Add New Product</h3>
     </div>
     <div class="cad-body">
 
@@ -52,7 +52,7 @@ if ($sId === 'admin@gmail.com') { ?>
             <input type="file" name="image">
           </div>
           <div class="form-group">
-            <button type="submit" name="add" class="btn btn-success">Register</button>
+            <button type="submit" name="add" class="btn btn-success">Save</button>
           </div>
 
 

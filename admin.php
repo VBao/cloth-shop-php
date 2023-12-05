@@ -146,9 +146,6 @@ if (isset($activeId)) {
             </tr>
           <?php }
         } else { ?>
-          <tr class="text-center">
-            <td>No user availabe now !</td>
-          </tr>
         <?php } ?>
 
       </tbody>

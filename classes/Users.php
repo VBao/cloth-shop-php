@@ -109,7 +109,7 @@ class Users
       if ($result) {
         $msg = '<div class="alert alert-success alert-dismissible mt-3" id="flash-msg">
   <a href="#" class="close" data-dismiss="alert" aria-label="close">&times;</a>
-  <strong>Success !</strong> Wow, you have Registered Successfully !</div>';
+  <strong>Success !</strong> Wow, you have Saveed Successfully !</div>';
         return $msg;
       } else {
         $msg = '<div class="alert alert-danger alert-dismissible mt-3" id="flash-msg">
@@ -144,7 +144,7 @@ class Users
       if ($result) {
         $msg = '<div class="alert alert-success alert-dismissible mt-3" id="flash-msg">
   <a href="#" class="close" data-dismiss="alert" aria-label="close">&times;</a>
-  <strong>Success !</strong> Wow, you have Registered Successfully !</div>';
+  <strong>Success !</strong> Add Product Successfully !</div>';
         return $msg;
       } else {
         $msg = '<div class="alert alert-danger alert-dismissible mt-3" id="flash-msg">
@@ -178,7 +178,7 @@ class Users
     $stmt->execute();
     return $stmt->fetch(PDO::FETCH_OBJ);
   }
-  // Check User Account Satatus
+  // Check Product Satatus
   public function CheckActiveUser($email)
   {
     $sql = "SELECT * FROM tbl_users WHERE email = :email and isActive = :isActive LIMIT 1";
@@ -270,7 +270,7 @@ class Users
         echo "<script>location.href='admin.php';</script>";
         Session::set('msg', '<div class="alert alert-success alert-dismissible mt-3" id="flash-msg">
           <a href="#" class="close" data-dismiss="alert" aria-label="close">&times;</a>
-          <strong>Success !</strong> Wow, Your Information updated Successfully !</div>');
+          <strong>Success !</strong> Edit Successfully !</div>');
       } else {
         echo "<script>location.href='admin.php';</script>";
         Session::set('msg', '<div class="alert alert-danger alert-dismissible mt-3" id="flash-msg">
@@ -293,7 +293,7 @@ class Users
     if ($result) {
       $msg = '<div class="alert alert-success alert-dismissible mt-3" id="flash-msg">
     <a href="#" class="close" data-dismiss="alert" aria-label="close">&times;</a>
-    <strong>Success !</strong> User account Deleted Successfully !</div>';
+    <strong>Success !</strong> Product Deleted Successfully !</div>';
       return $msg;
     } else {
       $msg = '<div class="alert alert-danger alert-dismissible mt-3" id="flash-msg">
@@ -320,7 +320,7 @@ class Users
       echo "<script>location.href='admin.php';</script>";
       Session::set('msg', '<div class="alert alert-success alert-dismissible mt-3" id="flash-msg">
           <a href="#" class="close" data-dismiss="alert" aria-label="close">&times;</a>
-          <strong>Success !</strong> User account activated Successfully !</div>');
+          <strong>Success !</strong> Product activated Successfully !</div>');
     } else {
       echo "<script>location.href='admin.php';</script>";
       Session::set('msg', '<div class="alert alert-danger alert-dismissible mt-3" id="flash-msg">

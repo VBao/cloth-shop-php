@@ -1,6 +1,6 @@
-DROP DATABASE IF EXISTS clothshop1;
-CREATE DATABASE clothshop1;
-USE clothshop1;
+DROP DATABASE IF EXISTS clothshop;
+CREATE DATABASE clothshop;
+USE clothshop;
 DROP TABLE IF EXISTS `order_items`;
 
 
