@@ -16,7 +16,7 @@ $conn = mysqli_connect($servername, $username, $password, $dbname);
 if (!$conn) {
     die("Connection failed: " . mysqli_connect_error());
 }
-$sql = "SELECT id, name, price, image FROM product LIMIT 12";
+$sql = "SELECT id, name, price, image FROM product ORDER BY id desc LIMIT 12";
 $result = mysqli_query($conn, $sql);
 
 $products = array();
@@ -288,7 +288,7 @@ $allOrders = getAllOrdersWithItems();
                             <th scope="col">Action</th>
                         </tr>
                     </thead>
-                    <tbody>
+                    <tbody style="font-size: 20px">
                         <?php foreach ($_SESSION['cart'] as $cartItem) :
                         ?>
                             <tr>
@@ -312,7 +312,7 @@ $allOrders = getAllOrdersWithItems();
             </div>
 
             <!-- Order Form -->
-            <div class="order-form">
+            <div class="order-form" style="font-size: 20px">
                 <h2>Order Information</h2>
                 <form action="#" method="post">
                     <div class="mb-3">
@@ -409,7 +409,7 @@ $allOrders = getAllOrdersWithItems();
                     <i class="fas fa-star"></i>
                     <i class="fas fa-star"></i>
                 </div>
-                <p>dich vu tren ca tuyet voi</p>
+                <p>Tạm chấp nhận được</p>
                 <div class="user">
                     <img src="assets/mina.jpg" alt="">
                     <div class="user-info">
@@ -428,7 +428,7 @@ $allOrders = getAllOrdersWithItems();
                     <i class="fas fa-star"></i>
                     <i class="fas fa-star"></i>
                 </div>
-                <p>dich vu tren ca tuyet voi</p>
+                <p>Sản phẩm đẹp và giá hợp lý</p>
                 <div class="user">
                     <img src="assets/nayeon.jpg" alt="">
                     <div class="user-info">
@@ -447,7 +447,7 @@ $allOrders = getAllOrdersWithItems();
                     <i class="fas fa-star"></i>
                     <i class="fas fa-star"></i>
                 </div>
-                <p>dich vu tren ca tuyet voi</p>
+                <p>Sản phẩm đẹp và giá hợp lý</p>
                 <div class="user">
                     <img src="assets/sana.jpg" alt="">
                     <div class="user-info">
@@ -466,7 +466,7 @@ $allOrders = getAllOrdersWithItems();
                     <i class="fas fa-star"></i>
                     <i class="fas fa-star"></i>
                 </div>
-                <p>dich vu tren ca tuyet voi</p>
+                <p>Sản phẩm đẹp và giá hợp lý</p>
                 <div class="user">
                     <img src="assets/momo.jpg" alt="">
                     <div class="user-info">
@@ -485,7 +485,7 @@ $allOrders = getAllOrdersWithItems();
                     <i class="fas fa-star"></i>
                     <i class="fas fa-star"></i>
                 </div>
-                <p>dich vu tren ca tuyet voi</p>
+                <p>Sản phẩm đẹp và giá hợp lý</p>
                 <div class="user">
                     <img src="assets/tzuyu.jpg" alt="">
                     <div class="user-info">
@@ -504,7 +504,7 @@ $allOrders = getAllOrdersWithItems();
                     <i class="fas fa-star"></i>
                     <i class="fas fa-star"></i>
                 </div>
-                <p>dich vu tren ca tuyet voi</p>
+                <p>Sản phẩm đẹp và giá hợp lý</p>
                 <div class="user">
                     <img src="assets/jihyo.jpg" alt="">
                     <div class="user-info">
@@ -523,7 +523,7 @@ $allOrders = getAllOrdersWithItems();
                     <i class="fas fa-star"></i>
                     <i class="fas fa-star"></i>
                 </div>
-                <p>dich vu tren ca tuyet voi</p>
+                <p>Mẩu mã đa dạng, đẹp</p>
                 <div class="user">
                     <img src="assets/jeongyeon.jpg" alt="">
                     <div class="user-info">
@@ -542,7 +542,7 @@ $allOrders = getAllOrdersWithItems();
                     <i class="fas fa-star"></i>
                     <i class="fas fa-star"></i>
                 </div>
-                <p>dich vu tren ca tuyet voi</p>
+                <p>Sản phẩm tốt, vải đẹp</p>
                 <div class="user">
                     <img src="assets/dahyun.jpg" alt="">
                     <div class="user-info">
@@ -561,7 +561,7 @@ $allOrders = getAllOrdersWithItems();
                     <i class="fas fa-star"></i>
                     <i class="fas fa-star"></i>
                 </div>
-                <p>dich vu tren ca tuyet voi</p>
+                <p>Sản phẩm đẹp và giá hợp lý</p>
                 <div class="user">
                     <img src="assets/chaeyoung.jpg" alt="">
                     <div class="user-info">

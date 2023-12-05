@@ -75,7 +75,7 @@ if (isset($activeId)) {
         if (!$conn) {
           die("Connection failed: " . mysqli_connect_error());
         }
-        $sql = "SELECT id, name, price, image FROM product";
+        $sql = "SELECT id, name, price, image FROM product ORDER BY id DESC";
         $result = mysqli_query($conn, $sql);
 
         $products = array();
